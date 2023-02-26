@@ -1,8 +1,8 @@
-abstract class Dwelling(var resident: Int) {
+abstract class Dwelling(var residents: Int) {
     abstract val buildingMaterial: String
     abstract val capacity: Int
 
     fun hasRoom(): Boolean{
-        return resident < capacity
+        return residents < capacity
     }
 }
